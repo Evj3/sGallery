@@ -21,3 +21,14 @@ btnNext.onclick = function () {
     }
     images[i].style.display = 'block';
 };
+
+document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 37:
+            btnPrev.onclick();
+            break;
+        case 39:
+            btnNext.onclick();
+            break;
+    }
+};
